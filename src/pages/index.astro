@@ -1,17 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+import Card from "../components/Card.astro"
 ---
 
-<Layout title="YOUR NAME">
-  <h1>YOUR NAME</h1>
+<Layout title="Isaac Salt">
+  <h1>Isaac Salt</h1>
+  <hr>
 
+  <div class="flex space-x-4 justify-around">
+
+      <Card imgSrc="public/assets/img/190321-26_diff_eq_200nT.png" imgDesc="Masters Project - Geomagnetic Field Modelling" pageLink="/proj-gfm"/>
+      <Card imgSrc="public/assets/img/jwst_horizons.png" imgDesc="Gravitational Field Modelling & JWST Trajectory simulation"/>
+      <Card imgSrc="public/assets/img/character_classification.png" imgDesc="Basic image classification with TensorFlow"/>
+
+  </div>
+  <br>
   <p>
-    Lorem ipsum, dolor sit amet <strong>consectetur adipisicing</strong> elit. Minus
-    sunt porro magni, possimus repellendus maxime. Voluptate incidunt laboriosam
-    officia! Cum, ducimus cumque? Repudiandae atque nostrum perspiciatis repellat
-    sit libero. Enim <a href="/now">voluptate</a> aliquam quae sit, cum quibusdam
-    ad <a href="/uses">possimus eaque</a> delectus eos! Laborum inventore corrupti,
-    animi id recusandae delectus est nisi!
+    I’ve recently graduated with a 2-1 Mphys in Astrophysics and am looking for work in software dev, data science, modelling and ML/AI methods. 
+    I’m currently living back home in Brighton but am willing to relocate. 
+    During my course I’ve developed strong programming skills, working mainly in Python for data science/modelling applications. 
+    See some project examples above.
   </p>
 </Layout>

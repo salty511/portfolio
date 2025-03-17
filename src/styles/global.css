@@ -39,7 +39,7 @@ body {
   color: var(--black-light);
 
   padding: 2rem;
-  max-width: 45rem;
+  max-width: 60rem;
   margin: 0 auto;
   vertical-align: baseline;
 
@@ -87,7 +87,7 @@ small {
 a {
   color: var(--black-mid);
   text-decoration-color: var(--grey-light);
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: underline;
 }
 
@@ -157,9 +157,9 @@ img {
   border-radius: 5px;
   max-width: 100%;
   max-height: 500px;
-  margin: 20px 0 20px 0;
+  margin: 0px 0 0px 0;
   display: block;
-  box-shadow: -8px 8px 20px var(--white-dark);
+  box-shadow: -4px 4px 5px var(--grey-light);
 }
 
 video {
