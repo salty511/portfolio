@@ -1,5 +1,23 @@
 ---
 import "../styles/global.css";
+import Layout from "../layouts/Layout.astro";
 ---
+<Layout title="Masters Project">
+	<h1>Masters Project - Geomagnetic Field Modelling</h1>
+	<hr>
 
-<h1>Masters Project - Geomagnetic Field Modelling</h1>
+	<p>
+		My Masters project was an investigation into an alternative method for modelling the Earth's magnetic field.
+		Traditionally full vector information of the field (measurements along each axis) is required for a useful model due to a non-uniqueness in models derived
+		from total field intensity alone (Backus effect). This project centered on trying to use a feature of the dayside field (The Equatorial Electrojet) together
+		with field intensity data. See below for a quick summary of our results.
+	</p>
+
+	<h2>Convergence</h2>
+
+	<p>
+		The magnetic field problem is non-linear, meaning it must be solved iteratively. As with any iterative solution, we have the issue of convergence. 
+	</p>
+	<br>
+	<img src="public/assets/img/230313_convergence.png" class="h-64"/>
+</Layout>
