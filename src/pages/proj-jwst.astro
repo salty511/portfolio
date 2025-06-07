@@ -5,13 +5,31 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="JWST Simulation">
 	<h1>JWST Simulation</h1>
 	<br>
-	<img class="h-64" src="/assets/img/jwst_horizons.png"/>
+	<img class="h-80" src="/assets/img/jwst_plot.png"/>
+	
 	<hr>
 
+	<ul> 
+		<li><b>Goal:</b> Simulate the trajectory of the James Webb Space Telescope (JWST) as it travels to its orbit around L2, and evaluate how GPU acceleration improves the performance of Runge-Kutta integration.</li>
+		<br>
+		<li><b>Tools/Tech:</b> Python, NumPy, CuPy, Matplotlib, Astroquery</li>
+	</ul>
+	<br>
 	<p>
-		This project involved developing a Runge-Kutta numerical solver in Python to simulate the gravitational field in the solar system. Ending with a simulation of
-		the trajectory of the James Webb Space Telescope. We took the initial conditions from the NASA Horizons database and propagated the orbit out to L2,
-		with the solution diverging from Horizons after a couple of months.
+		This project involved developing a custom Runge-Kutta numerical solver in Python to model the orbits of all 9 major planets in the Solar System. 
+		Using data from NASA's JPL Horizons system, the simulation traces the trajectory of the James Webb Space Telescope as it travels toward 
+		the Earth-Sun L2 Lagrange point.
+	</p>
+	<br>
+	<p>
+		The solver was implemented using both CPU (NumPy) and GPU (CuPy) backends to benchmark performance improvements. An adaptive step-size 
+		version of the integrator was also created for greater stability and accuracy. The simulation remains close to real ephemeris data for 
+		several months before diverging—demonstrating both the strength and limits of Newtonian integration in an N-body context.
+	</p>
+	<br>
+	<p>
+		🔗 <b>Repo:</b> <a href="https://github.com/salty511/gravitational-sim" target="_blank">gravitational-sim</a><br>
+		📘 <b>Rendered Notebook:</b> <a href="https://github.com/salty511/gravitational-sim/blob/master/main.ipynb" target="_blank">View on GitHub</a>
 	</p>
 
 </Layout>

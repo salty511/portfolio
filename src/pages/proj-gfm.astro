@@ -10,19 +10,32 @@ import Layout from "../layouts/Layout.astro";
 	<a href="/assets/Geomagnetic_Field_Modelling___Thesis (14).pdf" target="_blank" rel="noopener noreferrer"><p>Full Thesis PDF</p></a> 
 	<hr>
 
-	
+	<ul> 
+		<li><b>Goal:</b> Investigate an alternative method for modeling the Earth's magnetic field using scalar data, constrained by a physical feature of the dayside field.</li>
+		<br>
+		<li><b>Tools/Tech:</b> Python, Matplotlib, Linux/Unix Shell Scripting, Fortran</li>
+	</ul>
+	<br>
 
 	<p>
-		My Masters project was an investigation into an alternative method for modelling the Earth's magnetic field.
-		Traditionally full vector information of the field (measurements along each axis) is required for a useful model due to a non-uniqueness in models derived
-		from total field intensity alone (Backus effect). This project centered on trying to use a feature of the dayside field (The Equatorial Electrojet) together
-		with field intensity data. The EEJ essentially acts as a proxy for the magnetic equator, where the radial component of the field is 0. Meaning we can constrain
-		the model around this pseudo vector information along the equator. 
-		
+		My Master's project explored a novel approach to geomagnetic field modeling that circumvents the traditional requirement for full vector magnetic data. 
+		Typically, accurate models depend on vector measurements due to the <i>Backus effect</i>, where multiple field configurations can explain the same scalar intensity.
 	</p>
 	<br>
+
 	<p>
-		Work was presented at the <a href="https://www.swarm-anniversary-and-science.org/">2024 ESA Swarm Conference in Copenhagen</a>
+		To address this non-uniqueness, the project leveraged the <b>Equatorial Electrojet (EEJ)</b>—a current system on the Earth's dayside that acts as a proxy for 
+		the magnetic equator, where the radial magnetic field component is effectively zero. By using this physical constraint in combination with scalar field 
+		intensity data, we established a pseudo-vector condition along the equator, enabling a more stable and interpretable model.
+	</p>
+	<br>
+
+	<p>
+		🛰️ The methodology was applied to the CSET satellite magnetometer and compared with Swarm data.
+	</p>
+
+	<p>
+		🗣️ <b>Presented at:</b> <a href="https://www.swarm-anniversary-and-science.org/" target="_blank">2024 ESA Swarm Science Conference, Copenhagen</a>
 	</p>
 	
 </Layout>
